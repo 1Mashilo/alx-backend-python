@@ -2,8 +2,6 @@
 
 import asyncio
 from typing import List
-from 0x01-python_async_function.0-main import wait_random
-
 """
 Module for concurrent coroutines
 """
