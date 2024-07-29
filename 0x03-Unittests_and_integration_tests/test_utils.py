@@ -16,7 +16,8 @@ class TestAccessNestedMap(unittest.TestCase):
     """
     Test case class for testing the `access_nested_map` function.
 
-    This class contains test methods for both the expected output and exception cases of the `access_nested_map` function.
+    This class contains test methods for both the expected output
+    and exception cases of the `access_nested_map` function.
     """
 
     @parameterized.expand([
@@ -31,7 +32,8 @@ class TestAccessNestedMap(unittest.TestCase):
             expected: Union[Dict, int],
             ) -> None:
         """
-        Test method for testing the expected output of the `access_nested_map` function.
+        Test method for testing the expected output of the
+        `access_nested_map` function.
 
         Args:
             nested_map (Dict): The nested map to be accessed.
@@ -54,7 +56,8 @@ class TestAccessNestedMap(unittest.TestCase):
             exception: Exception,
             ) -> None:
         """
-        Test method for testing the exception cases of the `access_nested_map` function.
+        Test method for testing the exception cases of the
+        `access_nested_map` function.
 
         Args:
             nested_map (Dict): The nested map to be accessed.
@@ -96,6 +99,7 @@ class TestGetJson(unittest.TestCase):
         with patch("requests.get", return_value=Mock(**attrs)) as req_get:
             self.assertEqual(get_json(test_url), test_payload)
             req_get.assert_called_once_with(test_url)
+
 
 class TestMemoize(unittest.TestCase):
     """Tests the `memoize` function."""
